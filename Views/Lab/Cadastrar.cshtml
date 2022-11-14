@@ -1,0 +1,24 @@
+@model IEnumerable<MvcLabManager.Models.Lab>
+
+    @{
+        ViewData["Title"] = "Cadastrar";
+    }
+
+<h1>@ViewData["Title"]</h1>
+
+<h1>Cadastre um laboratório</h1>
+
+<form method="POST" asp-action="Cadastrar">
+
+    <label for="Number">Number: </label>
+    <input type="text" id="Number" name="Number">
+
+    <label for="Name">Name: </label>
+    <input type="text" id="Name" name="Name">
+
+    <label for="Block">Block: </label>
+    <input type="text" id="Block" name="Block">
+
+    <input type="submit" value="Cadastrar">
+
+</form>
