@@ -28,9 +28,9 @@ else
                     <td>@computer.Ram</td>
                     <td>@computer.Processor</td>
                     <td>
-                        <a class="btn btn-primary btn-sm" href="/Computer/Show/@computer.Id">Ver</a>
-                        <a class="btn btn-primary btn-sm" href="/Computer/Atualizar/@computer.Id">Atualizar</a>
-                        <a class="btn btn-primary btn-sm" href="/Computer/Deletar/@computer.Id">Deletar</a>
+                        <a class="btn btn-primary btn-sm" asp-controller="Computer" asp-action="Show" asp-route-id="@computer.Id">Ver</a>
+                        <a class="btn btn-primary btn-sm" asp-controller="Computer" asp-action="Atualizar" asp-route-id="@computer.Id">Atualizar</a>
+                        <a class="btn btn-primary btn-sm" asp-controller="Computer" asp-action="Deletar" asp-route-id="@computer.Id">Deletar</a>
                     </td>
                 </tr>
             }

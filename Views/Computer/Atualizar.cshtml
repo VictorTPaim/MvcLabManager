@@ -8,7 +8,7 @@
 
 <h1>Atualize as informações do computador</h1>
 
-<form method="POST" asp-action="Atualizar">
+<form method="POST" asp-controller="Computer" asp-action="Atualizar">
 
     <label for="Ram">Ram: </label>
     <input type="text" id="Ram" value="@Model.Ram" name="Ram">
